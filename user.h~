@@ -1,0 +1,28 @@
+#include <vector>
+#include <string>
+#ifndef USER_H
+#define USER_H
+
+class User {
+ public:
+ 	User(int id, std::string name, int birth_yr, int zip);
+ 	//~User();
+ 	void add_friend(int id);
+ 	void delete_friend(int id);
+ 	int get_id();
+ 	std::string get_name();
+ 	int get_birth();
+ 	int get_zip();
+ 	std::vector<int> friend_vector;
+
+
+ private:
+ 	int user_id;
+ 	int birth_year;
+ 	int zip_code;
+ 	std::string user_name;
+
+};
+
+
+#endif
